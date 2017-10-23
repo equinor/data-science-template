@@ -1,0 +1,7 @@
+# The .gitignore file specifies things that git should ignore. 
+#
+# An interim folder might contain files between different preprocessing stages. 
+# We don't check these in as their creation should be reproducable.
+
+!.gitignore
+#!SomeOtherFileToInclude

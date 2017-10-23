@@ -1,0 +1,7 @@
+# The .gitignore file specifies things that git should ignore. 
+#
+# A processed folder might contain fully processed files. We don't check these in
+# as their creation should be reproducable.
+
+!.gitignore
+#!SomeOtherFileToInclude

@@ -1,0 +1,6 @@
+name: my_environment
+dependencies:
+  - pandas=0.20.3
+  - pytest=3.2.1
+  - pytest-cov=2.5.1
+  - numpy=1.13.1
