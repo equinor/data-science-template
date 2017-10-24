@@ -1,9 +1,8 @@
-import os
-import sys
 import numpy as np
 import pytest
+
 # from pandas.util.testing import assert_frame_equal
-from src.common import example
+from projectname import example
 
 
 def test_something():
@@ -24,7 +23,7 @@ def test_common_example_add_value_to_numpy():
 
 def test_common_example_add_value_to_numpy_wrong_type():
     with pytest.raises(ValueError) as e_info:
-        example.add_value_to_numpy([1,1], 1)
+        example.add_value_to_numpy([1, 1], 1)
 
 
 def test_common_example_add_value_to_numpy_empty():

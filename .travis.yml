@@ -25,8 +25,11 @@ install:
     # now create the environment and install any extra packages
     - conda env create -n test-environment -f conda_env.yml
     - source activate test-environment
-    #- python setup.py install
+    # pip install and non conda packages
     - pip install coveralls
+
+    # setup packages
+    - python setup.py install
 
 # command to run tests
 script:
