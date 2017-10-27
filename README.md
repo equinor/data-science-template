@@ -7,7 +7,9 @@ This is a simple starting template for data science projects that contains many 
 As it is impossible to create a single template that will meet all of a projects needs this example should be considered dynamic and changed based upon the working and evolution of your project.
 
 ## Usage
-Download a copy of the files from this repository and modify as suited. In particular this readme file should be updated to describe your project including setup, configuration and usage.
+Download a copy of the files from this repository and modify as suited. In particular this readme file should be 
+updated to describe your project including setup, configuration and usage.If you clone the repository then be shore to 
+commit to a new project specific repository. 
 
 ## Installation
 1. Install git and checkout the [git code repository]
@@ -17,11 +19,17 @@ Download a copy of the files from this repository and modify as suited. In parti
 
    `conda env create --file conda_env.yml`
 
-5. Setup any python modules by executing the command:
+5. Any python modules under src need to be available to other scripts. This can be done in a couple of ways. You can 
+setup and install the python modules by executing the setup.py command below. 
 
    `python setup.py develop`
+   
+    As an alternative you may prefer to set the python path directly from notebooks, test scripts etc. From Pycharm 
+    you can also right click the src folder and select the _Mark Directory As | Source Root_ option.
 
-6. Add project specific steps to this list e.g. copying data files...
+
+
+6. Further you should add project specific steps to this list e.g. copying data files...
 
 ## Using the Python environment
 
@@ -31,6 +39,7 @@ Once the Python environment has been set up, to use the environment you need to
                * Windows: `activate my_environment`
                * Linux, OS X: `source activate my_environment`
                * The __environment is activated per terminal session__, so you must activate it every time you open terminal.
+
 
 * Deactivate the environment using the following command in a terminal window:
                * Windows: `deactivate my_environment`

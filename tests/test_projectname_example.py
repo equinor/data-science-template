@@ -1,5 +1,11 @@
+import os
+import sys
 import numpy as np
 import pytest
+
+# Explicitly set path so don't need to run setup.py - if we have multiple copies of the code we would otherwise need
+# to setup a seperate environment for each to ensure the code pointers are correct.
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
 # from pandas.util.testing import assert_frame_equal
 from projectname import example
