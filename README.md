@@ -54,13 +54,15 @@ Once the Python Conda environment has been set up, you can
 ## Initial File Structure
 
 ```
-├── .gitignore           <- Files that should be ignored by git. Add seperate .gitignore files in sub folders if needed
-├── .travis.yml          <- Travis CI build file (used for validating this template). Internally we might use Jenkins?
+├── .gitignore           <- Files that should be ignored by git. Add seperate .gitignore files in sub folders if 
+│                           needed
+├── .travis.yml          <- Travis CI build file (used for validating this template). Internally we might use 
+│                           Jenkins?
 ├── conda_env.yml        <- Conda environment definition for ensuring consistent setup across environments
 ├── LICENSE
 ├── README.md            <- The top-level README for developers using this project.
 ├── requirements.txt     <- The requirements file for reproducing the analysis environment, e.g.
-│                           generated with `pip freeze > requirements.txt`
+│                           generated with `pip freeze > requirements.txt`. Might not be needed if using conda.
 ├── setup.py             <- Metadata about your project for easy distribution.
 │
 ├── data
@@ -94,6 +96,10 @@ To run tests, install pytest using pip or conda (should have been setup already 
 then from the repository root run
  
 ```pytest```
+
+## References
+* http://docs.python-guide.org/en/latest/writing/structure/
+* https://github.com/Azure/Microsoft-TDSP
 
 [//]: #
    [anaconda]: <https://www.continuum.io/downloads>
