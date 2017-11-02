@@ -84,6 +84,7 @@ Once the Python Conda environment has been set up, you can
 │       └── example.py   <- Example functions and naming / commenting best practices
 │
 └── tests                <- Test cases
+    ├── test_notebook.py <- Example testing that Jupyter notebooks run without errors
     └── test_projectname_example.py     <- Example tests
 ```
 
