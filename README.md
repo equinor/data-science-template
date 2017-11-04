@@ -101,6 +101,7 @@ then from the repository root run
 ## References
 * http://docs.python-guide.org/en/latest/writing/structure/
 * https://github.com/Azure/Microsoft-TDSP
+* https://drivendata.github.io/cookiecutter-data-science/
 
 [//]: #
    [anaconda]: <https://www.continuum.io/downloads>
