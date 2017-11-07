@@ -1,4 +1,4 @@
-![](https://travis-ci.org/Statoil/data-science-template.svg?branch=master)
+[![](https://travis-ci.org/Statoil/data-science-template.svg?branch=master)](https://travis-ci.org/Statoil/data-science-template?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/Statoil/data-science-template/badge.svg?branch=master)](https://coveralls.io/github/Statoil/data-science-template?branch=master)
 
 # DataScienceTemplate
