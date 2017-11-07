@@ -2,10 +2,11 @@
 [![Coverage Status](https://coveralls.io/repos/github/Statoil/data-science-template/badge.svg?branch=master)](https://coveralls.io/github/Statoil/data-science-template?branch=master)
 
 # DataScienceTemplate
-This is a simple starting template for data science projects that contains many of the essential artifacts that you will
+This is a simple starting template for data science projects. It contains many of the essential artifacts that you will
 need and presents a number of best practices.
 
-As it is impossible to create a single template that will meet all of a projects needs this example should be considered dynamic and changed based upon the working and evolution of your project.
+As it is impossible to create a single template that will meet every projects needs, this example should be considered
+a starting point and changed based upon the working and evolution of your project.
 
 ## Usage
 Download a copy of the files from this repository and modify as suited. In particular this readme file should be 
@@ -29,10 +30,10 @@ conda environments site-packages folder but with a symlink to the src folder so 
 
    `python setup.py develop`
    
-    As an alternative you may prefer to set the python path directly from within notebooks, test scripts etc. From Pycharm 
-    you can also right click the src folder and select the _Mark Directory As | Source Root_ option.
+    As an alternative you may prefer to set the python path directly from the console, within notebooks, test scripts 
+    etc. From Pycharm you can also right click the src folder and select the _Mark Directory As | Source Root_ option.
 
-6. Further you should add your own project specific steps to this list e.g. copying data files...
+6. Further you should edit this document to add your own project specific steps to this list e.g. copying data files...
 
 ## Using the Python Conda environment
 
@@ -74,24 +75,27 @@ Once the Python Conda environment has been set up, you can
 │
 ├── examples             <- Add folders as needed e.g. examples, eda, use case
 │
+├── extras               <- Miscellaneous extras.
+│   └── add_explorer_context_shortcuts.reg    <- Adds additional Windows Explorer context menus for starting jupyter.
+│
 ├── notebooks            <- Notebooks for EDA or otherwise.
 │   ├── example.ipynb    <- Example python notebook
 │   └── example.rmd      <- Example R notebook
 │
 ├── src                  <- Code for use in this project.
-│   └── projectname      <- Example python module
-│       ├── __init__.py  <- Python package directory
-│       └── example.py   <- Example functions and naming / commenting best practices
+│   └── examplepackage   <- Example python package - place shared code in such a package
+│       ├── __init__.py  <- Python package initialisation
+│       └── examplemodule.py  <- Example module with functions and naming / commenting best practices
 │
 └── tests                <- Test cases
     ├── test_notebook.py <- Example testing that Jupyter notebooks run without errors
-    └── test_projectname_example.py     <- Example tests
+    └── test_examplemodule_examplemodule.py     <- Example tests
 ```
 
 ## Testing
 Reproducability and the correct functioning of code are essential to avoid wasted time. If a code block is copied more 
-than once then it should be placed into a common script under src and unit tests added. The same applies for any other 
-non trivial code to ensure the correct functioning.
+than once then it should be placed into a common script / module under src and unit tests added. The same applies for 
+any other non trivial code to ensure the correct functioning.
 
 To run tests, install pytest using pip or conda (should have been setup already if you used the conda_env.yml file) and 
 then from the repository root run
