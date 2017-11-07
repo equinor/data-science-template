@@ -1,0 +1,52 @@
+Windows Registry Editor Version 5.00
+;
+; This adds additional explorer menus. Verify any path's below and add / remove conda environments as needed
+;
+
+;
+; Right click on folder commands
+;
+
+[HKEY_CLASSES_ROOT\Directory\Shell\Data Science]
+"MUIVerb"="Data Science"
+"SubCommands"=""
+"Position"=-
+
+[HKEY_CLASSES_ROOT\Directory\Shell\Data Science\Shell\Run Jupyter Here]
+@="Run Jupyter Here"
+"Icon"="C:\\appl\\Applications\\Anaconda3\\Menu\\jupyter.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\Data Science\Shell\Run Jupyter Here\command]
+@="cmd.exe /K jupyter notebook"
+
+;
+; Right click on background commands
+;
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\Data Science]
+"MUIVerb"="Data Science"
+"SubCommands"=""
+"Position"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\Data Science\Shell\Run Jupyter Here]
+@="Run Jupyter Here"
+"Icon"="C:\\appl\\Applications\\Anaconda3\\Menu\\jupyter.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\Data Science\Shell\Run Jupyter Here\command]
+@="cmd.exe /K jupyter notebook"
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\Data Science\Shell\Run Jupyter Here (deeplearning env)]
+@="Run Jupyter Here (deeplearning env)"
+"Icon"="C:\\appl\\Applications\\Anaconda3\\Menu\\jupyter.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\Data Science\Shell\Run Jupyter Here (deeplearning env)\command]
+@="cmd.exe /K activate deeplearning & jupyter notebook"
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\Data Science\Shell\Run Jupyter Here (anaconda env)]
+@="Run Jupyter Here (anaconda env)"
+"Icon"="C:\\appl\\Applications\\Anaconda3\\Menu\\jupyter.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\Data Science\Shell\Run Jupyter Here (anaconda env)\command]
+@="cmd.exe /K activate anaconda & jupyter notebook"
