@@ -50,17 +50,19 @@ conda environments site-packages folder but with a symlink to the src folder so 
 Once the Python Conda environment has been set up, you can
 
 * Activate the environment using the following command in a terminal window:
-               * Windows: `activate my_environment`
-               * Linux, OS X: `source activate my_environment`
-               * The __environment is activated per terminal session__, so you must activate it every time you open terminal.
 
+  * Windows: `activate my_environment`
+  * Linux, OS X: `source activate my_environment`
+  * The __environment is activated per terminal session__, so you must activate it every time you open terminal.
 
 * Deactivate the environment using the following command in a terminal window:
-               * Windows: `deactivate my_environment`
-               * Linux, OS X: `source deactivate my_environment`
+
+  * Windows: `deactivate my_environment`
+  * Linux, OS X: `source deactivate my_environment`
                
 * Delete the environment using the command (can't be undone):
-    * `conda remove --name my_environment --all`
+
+  * `conda remove --name my_environment --all`
 
 ## Initial File Structure
 
