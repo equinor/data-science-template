@@ -8,13 +8,23 @@ need and presents a number of best practices.
 As it is impossible to create a single template that will meet every projects needs, this example should be considered
 a starting point and changed based upon the working and evolution of your project.
 
-## Usage
-Download a copy of the files from this repository and modify as suited. In particular this readme file should be 
-updated to describe your project including setup, configuration and usage.
+## Getting Started
+Make your own project specific copy of this repository by doing one of the following:
 
-You should commit all code changes to a new repository. All exploratory work should be kept and verified working as 
-value is often produced in this part of an analysis, even if results disprove initial hypothesise. If working in a multi 
-user team then a strategy for git branching and the use of merge requests should be agreed upon prior to startup.
+* Download a zipped copy of the files from the "Clone or download" button.
+* Clone this repository, create a second copy locally from which you delete the .git folder or change the remotes. The expectation is that the contents will change so much as your analysis evolves that there is no point referring back to this original repository.
+
+You should then modify the contents of your new copy as suited. In particular you might want to do the following:
+
+* Update this readme file to describe your project including setup, configuration and usage. You might also delete this Getting Started section once you have considered the steps below
+* Change or delete the LICENSE file if your terms are different.
+* Modify conda_env.yml with a project specific name
+* Rename src\examplepackage to something more relevant to your project (e.g. src\<projectname>). This will also require corresponding changes in:
+   * tests\test_examplepackage_examplemodule.py - import statement 
+   * notebooks\example.ipynb - import statement
+   * setup.py - packages list
+
+You should commit all code changes to a new repository. The setup steps below can then be run to configure the environment on yours, or someone elses computer.
 
 ## Setup
 1. Install git and checkout the [git code repository]
@@ -92,6 +102,12 @@ Once the Python Conda environment has been set up, you can
     └── test_examplemodule_examplemodule.py     <- Example tests
 ```
 
+# Some Guidelines
+The following are some guidelines for usage and working together. Expand upon this list as needed.
+
+* All exploratory work should be kept and verified working, as value is often produced in this part of an analysis, even if results disprove initial hypothesise. 
+* If working in a multi user team then a strategy for git branching and the use of merge requests should be agreed upon prior to startup.
+
 ## Testing
 Reproducability and the correct functioning of code are essential to avoid wasted time. If a code block is copied more 
 than once then it should be placed into a common script / module under src and unit tests added. The same applies for 
@@ -103,6 +119,7 @@ then from the repository root run
 ```pytest```
 
 ## References
+* https://github.com/Statoil/data-science-template/ - The master template for this project
 * http://docs.python-guide.org/en/latest/writing/structure/
 * https://github.com/Azure/Microsoft-TDSP
 * https://drivendata.github.io/cookiecutter-data-science/
