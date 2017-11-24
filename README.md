@@ -120,6 +120,9 @@ then from the repository root run
  
 ```pytest```
 
+## Important Links
+* https://dataplatformwiki.azurewebsites.net/doku.php - Data Platform wiki
+
 ## References
 * https://github.com/Statoil/data-science-template/ - The master template for this project
 * http://docs.python-guide.org/en/latest/writing/structure/
