@@ -81,7 +81,8 @@ Once the Python Conda environment has been set up, you can
 ├── data
 │   ├── interim_[desc]   <- Interim files - give these folders whatever name makes sense.
 │   ├── processed        <- The final, canonical data sets for modeling.
-│   └── raw              <- The original, immutable data dump.
+│   ├── raw              <- The original, immutable data dump.
+│   └── temp             <- Temporary files.
 │
 ├── docs                 <- Any specific documentation (try ideally to keep to README.md)
 │
