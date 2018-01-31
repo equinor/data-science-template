@@ -24,5 +24,5 @@ setup(
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
         "License :: OSI Approved :: BSD License",
-    ], install_requires=['numpy', 'pytest']
+    ], install_requires=['numpy', 'pytest', 'pandas']
 )
