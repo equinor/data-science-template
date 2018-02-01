@@ -139,7 +139,8 @@ then from the repository root run
 ```pytest```
 
 ## Important Links
-* https://dataplatformwiki.azurewebsites.net/doku.php - Data Platform wiki
+* https://dataplatformwiki.azurewebsites.net/doku.php - Data Platform wiki (Statoil internal)
+* https://github.com/Statoil/data-science-shared - Shared Data Science Code Repository (Statoil internal)
 
 ## References
 * https://github.com/Statoil/data-science-template/ - The master template for this project
