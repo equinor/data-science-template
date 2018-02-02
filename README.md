@@ -8,6 +8,8 @@ need and presents a number of best practices.
 As it is impossible to create a single template that will meet every projects needs, this example should be considered
 a starting point and changed based upon the working and evolution of your project.
 
+Before working with the contents of this template or Data Science projects in general it is recommended to familiarise yourself with the Statoil [Data Science Technical Standards](https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards) (Statoil internal only)
+
 ## Getting Started
 Make your own project specific copy of this repository by doing one of the following:
 
@@ -122,12 +124,6 @@ Once the Python Conda environment has been set up, you can
         └── pipeline         <- pipeline tests
 ```
 
-# Some Guidelines
-The following are some guidelines for usage and working together. Expand upon this list as needed.
-
-* All exploratory work should be kept and verified working, as value is often produced in this part of an analysis, even if results disprove initial hypothesise. 
-* If working in a multi user team then a strategy for git branching and the use of merge requests should be agreed upon prior to startup.
-
 ## Testing
 Reproducability and the correct functioning of code are essential to avoid wasted time. If a code block is copied more 
 than once then it should be placed into a common script / module under src and unit tests added. The same applies for 
@@ -138,7 +134,19 @@ then from the repository root run
  
 ```pytest```
 
+## Contributing
+Contributions to this template are greatly appreciated and encouraged.
+
+To contribute an update simply:
+* Create a new branch / fork for your updates.
+* Check that your code follows the PEP8 guidelines (line lengths up to 120 are ok) and other general conventions within this document.
+* Ensure that as far as possible there are unit tests covering the functionality of any new code.
+* Check that all existing unit tests still pass.
+* Edit this document if needed to describe new files or other important information.
+* Create a pull request.
+
 ## Important Links
+* https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards - Data Science Technical Standards (Statoil Internal)
 * https://dataplatformwiki.azurewebsites.net/doku.php - Data Platform wiki (Statoil internal)
 * https://github.com/Statoil/data-science-shared - Shared Data Science Code Repository (Statoil internal)
 
