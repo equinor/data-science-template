@@ -28,7 +28,7 @@ You should then modify the contents of your new copy as suited. In particular yo
    * notebooks\example.ipynb - import statement
    * setup.py - packages list
 
-All changes should then be comitted back to a new repository specific for your project. The setup steps below can then be run to configure the environment on yours, or someone elses computer.
+All changes should then be comitted to a new repository specific for your project. The setup steps below can then be run to configure the environment on yours, or someone elses computer.
 
 ## Setup
 1. Install git and checkout the [git code repository]
