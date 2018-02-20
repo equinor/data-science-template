@@ -1,7 +1,7 @@
 [![](https://travis-ci.org/Statoil/data-science-template.svg?branch=master)](https://travis-ci.org/Statoil/data-science-template?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/Statoil/data-science-template/badge.svg?branch=master)](https://coveralls.io/github/Statoil/data-science-template?branch=master)
 
-# DataScienceTemplate
+# Data Science Template
 This is a simple starting template for data science projects. It contains many of the essential artifacts that you will
 need and presents a number of best practices including a standard template to guide and gather information relating to 
 the process and specific use case. 
@@ -11,23 +11,25 @@ a starting point and changed based upon the working and evolution of your projec
 
 Before working with the contents of this template or Data Science projects in general it is recommended to familiarise yourself with the Statoil [Data Science Technical Standards](https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards) (Statoil internal only)
 
-## Getting Started
-Make your own project specific copy of this repository by doing one of the following:
+## Getting Started With This Template
+This git repository contains only this template which is a starting point for your own work. You will need to create your own project specific repository to which you should copy the contents of this template. Make your own project specific copy of this repository by doing one of the following:
 
-* Download a zipped copy of the files from the "Clone or download" button.
-* Clone this repository, create a second copy locally from which you delete the .git folder or change the remotes. The expectation is that the contents will change so much as your analysis evolves that there is no point referring back to this original repository.
+* Download a zipped copy of the files using the "Clone or download" button.
+* Clone this repository, create a second copy locally from which you delete the .git folder or change the remotes. 
 
 You should then modify the contents of your new copy as suited. In particular you might want to do the following:
 
 * Update this readme file to describe your project including setup, configuration and usage. You might also delete this Getting Started section once you have considered the steps below
+* If using Travis for CI then modify .travis.yml as needed, if not then delete this file / replace with another for e.g. Jenkins. 
 * Change or delete the LICENSE file if your terms are different.
 * Modify conda_env.yml with a project specific name
+* Create a [requirements.txt](https://pip.pypa.io/en/stable/user_guide/) file for any non Conda packages.
 * Rename src\examplepackage to something more relevant to your project (e.g. src\<projectname>). This will also require corresponding changes in:
    * tests\test_examplepackage_examplemodule.py - import statement 
    * notebooks\example.ipynb - import statement
    * setup.py - packages list
 
-You should commit all code changes to a new repository. The setup steps below can then be run to configure the environment on yours, or someone elses computer.
+All changes should then be comitted to a new repository specific for your project. The setup steps below can then be run to configure the environment on yours, or someone elses computer.
 
 The docs\process_documentation.md file should be completed phase by phase, and each phase result shall be submitted for review and approval before the project moves on to the next phase. This is to assist with the gathering of essential information required to deliver a correct and robust solution. 
 
@@ -54,7 +56,7 @@ When distributing your module, you can create a Python egg with the command `pyt
 
 NOTE: When working in the project notebooks from within the Statoil network, you may need to include the lines below if your proxy is not otherwise setup.
 
-`os.environ['HTTP_PROXY']="http://www-proxy.statoil.no:80"`
+`os.environ['HTTP_PROXY']="http://www-proxy.statoil.no:80"`<br />
 `os.environ['HTTPS_PROXY']="http://www-proxy.statoil.no:80"`
 
 ## Using the Python Conda environment
