@@ -3,7 +3,8 @@
 
 # DataScienceTemplate
 This is a simple starting template for data science projects. It contains many of the essential artifacts that you will
-need and presents a number of best practices.
+need and presents a number of best practices including a standard template to guide and gather information relating to 
+the process and specific use case. 
 
 As it is impossible to create a single template that will meet every projects needs, this example should be considered
 a starting point and changed based upon the working and evolution of your project.
@@ -27,6 +28,8 @@ You should then modify the contents of your new copy as suited. In particular yo
    * setup.py - packages list
 
 You should commit all code changes to a new repository. The setup steps below can then be run to configure the environment on yours, or someone elses computer.
+
+The docs\process_documentation.md file should be completed phase by phase, and each phase result shall be submitted for review and approval before the project moves on to the next phase. This is to assist with the gathering of essential information required to deliver a correct and robust solution. 
 
 ## Setup
 1. Install git and checkout the [git code repository]
@@ -94,6 +97,7 @@ Once the Python Conda environment has been set up, you can
 │   └── temp                 <- Temporary files.
 │
 ├── docs                     <- Any specific documentation (try ideally to keep to README.md)
+│   └── process_documentation.mf  <- Standard template for documenting process and decisions.
 │
 ├── examples                 <- Add folders as needed e.g. examples, eda, use case
 │
