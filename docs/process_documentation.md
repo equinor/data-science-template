@@ -6,7 +6,7 @@ This DS standard document takes the form of a template. Each DS project executed
  
 The document is structured into 6 sections according to the 6 DS phases: 
 * business understanding and problem definition
-* project planning*
+* project planning
 * collecting and preparing data
 * modeling
 * evaluation
