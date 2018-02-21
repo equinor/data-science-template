@@ -1,24 +1,26 @@
-# Statoil Data Science Standard
+# Statoil Data Science Process Standard
 
 * * *
 ## Introduction
-This DS standard document takes the form of a template. Each DS project executed in Statoil shall complete this template to make sure that DS project in Statoil can deliver value to business to the maximal extent.
+This DS process standard takes the form of a template. Each DS project executed in Statoil shall complete this template to make sure that DS project in Statoil can deliver value to business to the maximal extent.
  
 The document is structured into 6 sections according to the 6 DS phases: 
-* business understanding and problem definition
-* project planning
-* collecting and preparing data
-* modeling
-* evaluation
-* deployment and monitoring. 
+* Business understanding and problem definition
+* Project planning
+* Collecting and preparing data
+* Modeling
+* Evaluation
+* Deployment and monitoring
 
 For each phase, a set of tasks are identified. A group of questions are listed under each task. These questions are designed to guide DS teams to carry out DS projects in a standard way.
 
-The DS team shall complete all the questions as a joint effort of the whole team. The answers for each phase shall be reviewed/approved by QA team (for example, DS VP, PM, DS discipline advisor, Peers, Stakeholders) before the project moves to the next phase (Table 1. on the next page shall contain the review/approval records for each phase). 
+The DS team shall complete all the questions as a joint effort of the whole team. The answers for each phase shall be reviewed/approved by QA team (for example, DS VP, PM, DS discipline advisor, Peers, Stakeholders) before the project moves to the next phase (Table 1. shall contain the review/approval records for each phase). The questions answered in previous iterations shall be updated if needed, and the updated document shall be reviewed and approved. 
 
-The questions answered in previous iterations shall be updated if needed, and the updated document shall be reviewed and approved. The DS project leader (DS team responsible) owns (is responsible for completing) this document. 
+DS project leader (DS team responsible) owns (is responsible for completing) this document. 
 
-Figure 1. shows the adopted data science process phases, and the document/quality control process is plotted in the middle. A more detailed document/quality control flowchart is illustrated in Figure 2. The approved documents for each phase shall be archived in the knowledge repository to keep history track and future knowledge sharing.
+Figure 1. shows the adopted data science process phases, and the document/quality control process is plotted in the middle. A more detailed document/quality control flowchart is illustrated in Figure 2. 
+
+The approved documents for each phase shall be archived in the knowledge repository to keep history track and future knowledge sharing.
 
 * * *
 **Table 1.** Data Science phase review/approval table
@@ -134,7 +136,7 @@ _ _ _
 ###	2.4	DS tools planning
 ####	2.4.1	What tools/platforms/systems are planned to be used in the DS project?
 ####	2.4.2	Are there experience/competence gap to use these tools? If yes, what is the plan to close the gap?
-####	2.4.3	Are all the tools standard tools according to the DCOE DS tech standard? If not, why? [link to the standard wiki page] (https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards)
+####	2.4.3	Are all the tools standard tools according to the DCOE DS tech standard? If not, why? ([link to the standard wiki page](https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards))
 ####	2.4.4	What is the plan for code/document review, artifact archiving, and knowledge sharing?
 
 ###	2.5	Document review and artifact archiving
