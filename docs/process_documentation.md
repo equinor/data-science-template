@@ -151,7 +151,7 @@ _ _ _
 ####	3.1.3	Is the raw data kept untouched after collection?
 ####	3.1.4	Is the data to be stored in the data platform? If not, why?
 ####	3.1.5	Is open data format used to store the data, for example, txt, json, csv? If not, why?
-#### 3.1.6 Is an automated pipeline for processing new data set up?
+#### 3.1.6 Is an automated pipeline set up for processing new data? If not, why?
 ####	3.1.7	Document the data collection process?
 
 ###	3.2	Exploring data
