@@ -31,7 +31,8 @@ You should then modify the contents of your new copy as suited. In particular yo
 
 All changes should then be comitted to a new repository specific for your project. The setup steps below can then be run to configure the environment on yours, or someone elses computer.
 
-The docs\process_documentation.md file should be completed phase by phase, and each phase result shall be submitted for review and approval before the project moves on to the next phase. This is to assist with the gathering of essential information required to deliver a correct and robust solution. 
+The docs\process_documentation.md file should be completed phase by phase, and each phase result shall be submitted for review and approval before the project moves on to the next phase. This is to assist with the gathering of essential information required to deliver a correct and robust solution. The git respoitory shall be added to the script that populates the [knowledge repository](https://git.statoil.no/DataScience/projects) to ease future knowledge sharing.
+
 
 ## Setup
 1. Install git and checkout the [git code repository]
