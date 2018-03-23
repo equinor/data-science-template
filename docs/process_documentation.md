@@ -20,7 +20,7 @@ DS project leader (DS team responsible) owns (is responsible for completing) thi
 
 Figure 1. shows the adopted data science process phases, and the document/quality control process is plotted in the middle. A more detailed document/quality control flowchart is illustrated in Figure 2. 
 
-The approved documents for each phase shall be archived in the knowledge repository to keep history track and future knowledge sharing.
+The documents shall be added to the [https://git.statoil.no/DataScience/projects knowledge repository] to ease future knowledge sharing.
 
 * * *
 **Table 1.** Data Science phase review/approval table
