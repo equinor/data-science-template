@@ -17,6 +17,7 @@ This git repository contains only this template which is a starting point for yo
 git clone https://github.com/Statoil/data-science-template *<myproject-folder>*<br/>
 cd *<myproject-folder>*<br/>
 rm -rf .git<br/>
+git init<br/>
 git add .<br/>
 git commit -m "Initial commit"<br/>
 git remote add origin *<remote-repository-url>*
