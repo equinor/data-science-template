@@ -12,12 +12,18 @@ a starting point and changed based upon the working and evolution of your projec
 Before working with the contents of this template or Data Science projects in general it is recommended to familiarise yourself with the Statoil [Data Science Technical Standards](https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards) (Statoil internal only)
 
 ## Getting Started With This Template
-This git repository contains only this template which is a starting point for your own work. You will need to create your own project specific repository to which you should copy the contents of this template. Make your own project specific copy of this repository by doing one of the following:
+This git repository contains only this template which is a starting point for your own work. You will need to create your own project specific repository to which you should copy the contents of this template. You can do this manually by download a zipped copy of the files using the "Clone or download" button or with the following commands (substitute myproject with the name of your project).
 
-* Download a zipped copy of the files using the "Clone or download" button.
-* Clone this repository, create a second copy locally from which you delete the .git folder or change the remotes. 
+git clone https://github.com/Statoil/data-science-template *<myproject-folder>*<br/>
+cd *<myproject-folder>*<br/>
+rm -rf .git<br/>
+git add .<br/>
+git commit -m "Initial commit"<br/>
+git remote add origin *<remote-repository-url>*
+git remote -v
+git push origin master
 
-You should then modify the contents of your new copy as suited. In particular you might want to do the following:
+You should then modify the contents of your new copy as suited (alternatively before adding hte files to git). In particular you might want to do the following:
 
 * Update this readme file to describe your project including setup, configuration and usage. You might also delete this Getting Started section once you have considered the steps below
 * If using Travis for CI then modify .travis.yml as needed, if not then delete this file / replace with another for e.g. Jenkins. 
