@@ -123,6 +123,10 @@ Once the Python Conda environment has been set up, you can
 │   ├── modelling            <- Notebooks for modelling
 │   └── preprocessing        <- Notebooks for Preprocessing 
 │
+├── reporting                <- Solutions for reporting of results
+│   ├── webapp               <- Flask based template for displaying content including text and graphs
+│   └── README.md            <- Information on usage and setup of the webapp sample and more
+│
 ├── src                      <- Code for use in this project.
 │   └── examplepackage       <- Example python package - place shared code in such a package
 │       ├── __init__.py      <- Python package initialisation
