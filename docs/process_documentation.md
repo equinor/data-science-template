@@ -2,7 +2,7 @@
 
 * * *
 ## Introduction
-This DS process standard takes the form of a template. Each DS project executed in Statoil shall complete this template to make sure that DS project in Statoil can deliver value to business to the maximal extent.
+This DS process standard takes the form of a template. Each DS project shall complete this template to make sure that DS project in Statoil can deliver value to business to the maximal extent.
  
 The document is structured into 6 sections according to the 6 DS phases: 
 * Business understanding and problem definition
