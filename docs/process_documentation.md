@@ -132,6 +132,7 @@ _ _ _
 ####	2.3.8	Is Kanban agile project process considered as the first option? If not, why?
 ####	2.3.9	What is the feedback loop from stakeholders?
 ####	2.3.10	How can the results from each phase be reviewed by stakeholders?
+####    2.3.11  Has an architecture contract been completed?
 
 ###	2.4	DS tools planning
 ####	2.4.1	What tools/platforms/systems are planned to be used in the DS project?
