@@ -1,4 +1,4 @@
-# Statoil Data Science Process Standard
+# Equinor Data Science Process Standard
 
 * * *
 ## Introduction
@@ -58,8 +58,11 @@ _ _ _
 ##### 	1.2.1	What is the business challenge/pain point/bottleneck?
 ##### 	1.2.2	What are the identified use cases?
 ##### 	1.2.3	Has the discovery workshop been executed, and what is the result?
-##### 	1.2.4	What is the current solution?
-##### 	1.2.5	What are the constraints?
+##### 	1.2.4	What is the current solution / how might a theoretical human “expert” perform the task today?
+##### 	1.2.5	If your human expert were to perform this task, how would you respond to them so they improved for the next time? For classification, do this for all four phases of a typical confusion matrix (e.g. true / false)
+##### 	1.2.6	If a human were to perform this task, what assumptions would the user want them to make?
+##### 	1.2.7	What are the constraints?
+
 
 ###	1.3	Identifying requirements
 ##### 	1.3.1	What are the functional requirements?
