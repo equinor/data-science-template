@@ -64,7 +64,7 @@ conda environments site-packages folder but with a symlink to the src folder so 
 
 When distributing your module, you can create a Python egg with the command `python setup.py bdist_egg` and upload the egg.
 
-NOTE: When working in the project notebooks from within the Statoil network, you may need to include the lines below if your proxy is not otherwise setup.
+NOTE: When working in the project notebooks from within the Equinor network, you may need to include the lines below if your proxy is not otherwise setup.
 
 `os.environ['HTTP_PROXY']="http://www-proxy.statoil.no:80"`<br />
 `os.environ['HTTPS_PROXY']="http://www-proxy.statoil.no:80"`
