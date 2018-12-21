@@ -109,7 +109,7 @@ Once the Python Conda environment has been set up, you can
 │   └── temp                 <- Temporary files.
 │
 ├── docs                     <- Any specific documentation (try ideally to keep to README.md)
-│   └── process_documentation.mf  <- Standard template for documenting process and decisions.
+│   └── process_documentation.md  <- Standard template for documenting process and decisions.
 │
 ├── examples                 <- Add folders as needed e.g. examples, eda, use case
 │
