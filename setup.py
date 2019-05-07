@@ -12,7 +12,9 @@ def read(file_name):
 
 setup(
     name="example_datascience_project",
-    version="0.0.1",
+    # version="0.0.1",
+    version_format='{tag}.{commitcount}+{gitsha}',
+    setup_requires=['setuptools-git-version'],
     author='Statoil ASA',
     author_email="Name@statoil.com",
     description="An example data science project",
