@@ -12,9 +12,14 @@ def read(file_name):
 
 setup(
     name="example_datascience_project",
-    version="0.0.1",
-    author='Statoil ASA',
-    author_email="Name@statoil.com",
+    # version="0.0.1",
+    version_config={
+      "version_format": "{tag}.dev{sha}",
+      "starting_version": "0.0.1"
+    },
+    setup_requires=['better-setuptools-git-version'],
+    author='Equinor ASA',
+    author_email="Name@equinor.com",
     description="An example data science project",
     long_description=open('README.md').read(),
     packages=['examplepackage'],
