@@ -2,9 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/Statoil/data-science-template/badge.svg?branch=master)](https://coveralls.io/github/Statoil/data-science-template?branch=master)
 
 # Data Science Template
-This is a starter template for data science projects. It contains many of the essential artifacts that you will
-need and presents a number of best practices including a standard template to guide and gather information relating to 
-the process and specific use case. 
+This is a starter template for data science projects in Equinor, however it may also be useful for others. It contains many of the essential artifacts that you will need and presents a number of best practices including a standard template to guide and gather information relating to the process and specific use case. 
 
 As it is impossible to create a single template that will meet every projects needs, this example should be considered
 a starting point and changed based upon the working and evolution of your project.
@@ -31,12 +29,12 @@ You are now ready to get started, however you should create a new github reposit
 project using the following commands (substitute myproject with the name of your project and REMOTE-REPOSITORY-URL 
 with the remote repository url).
 
-    cd myproject<
-    git init<
+    cd myproject
+    git init
     git add .
     git commit -m "Initial commit"
     git remote add origin REMOTE-REPOSITORY-URL
-    git remote -v<
+    git remote -v
     git push origin master
 
 Finally you may want to:
