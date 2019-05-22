@@ -1,8 +1,5 @@
-trigger:
-- master
-
 jobs:
-- job: Build and Test
+- job: Build_and_Test
   displayName: Build and Test
   condition: succeeded()
   pool:
@@ -21,22 +18,18 @@ jobs:
     inputs:
       versionSpec: '$(python.version)'
 
-  - script: 'python -m pip install --upgrade pip'
-    displayName: 'Install dependencies'
+  - script: python -m pip install --upgrade pip
+    displayName: 'Upgrade pip'
 
   - script: pip install -r requirements.txt
     displayName: 'Install requirements'
-    enabled: false
 
   - script: |
-      python -m pip install flake8
-      flake8 .
-    displayName: 'Run lint tests'
+      flake8 --max-line-length=120 *.py hooks/ tests/
+    displayName: 'Run lint (flake8) tests'
 
   - script: |
-      pip install pytest
-      pip install pytest-cov
-      pytest python-testing --doctest-modules --junitxml=junit/test-results.xml --cov --cov-report=xml --cov-report=html
+      pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov --cov-report=xml --cov-report=html
     displayName: pytest
 
   - task: PublishTestResults@2
