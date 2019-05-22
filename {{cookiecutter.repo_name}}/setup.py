@@ -9,6 +9,11 @@ from setuptools import setup
 def read(file_name):
     return open(os.path.join(os.path.dirname(__file__), file_name)).read()
 
+{%- set license_classifiers = {
+    'MIT': 'License :: OSI Approved :: MIT License',
+    'LGPL3': 'License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
+    'GPL3': 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
+} %}
 
 setup(
     name="{{cookiecutter.project_name}}",
@@ -17,7 +22,8 @@ setup(
       "version_format": "{tag}.dev{sha}",
       "starting_version": "0.0.1"
     },
-    setup_requires=['better-setuptools-git-version'],
+    setup_requires=['pytest-runner', 'better-setuptools-git-version'],
+    tests_require=['pytest', 'nbformat'],
     author='{{cookiecutter.author}}',
     author_email="Name@equinor.com",
     description="{{cookiecutter.project_description}}",
@@ -28,6 +34,8 @@ setup(
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
-        "License :: OSI Approved :: BSD License",
+{%- if cookiecutter.open_source_license in license_classifiers %}
+        '{{ license_classifiers[cookiecutter.open_source_license] }}',
+{%- endif %}
     ], install_requires=['numpy', 'pytest', 'pandas']
 )
