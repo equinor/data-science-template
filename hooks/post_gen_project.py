@@ -23,7 +23,7 @@ if __name__ == "__main__":
     # today = datetime.date.today()
     # replace_contents('LICENSE', '<YEAR>', today.strftime("%Y"))
 
-    if '{{ cookiecutter.license }}' == "No license file":
+    if '{{ cookiecutter.open_source_license }}' == "No license file":
         os.remove('LICENSE')
         # shutil.rmtree('LICENSE')
 
