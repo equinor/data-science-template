@@ -18,8 +18,8 @@ jobs:
     inputs:
       versionSpec: '$(python.version)'
 
-  - script: 'python -m pip install --upgrade pip'
-    displayName: 'Install dependencies'
+  - script: python -m pip install --upgrade pip
+    displayName: 'Upgrade pip'
 
   - script: pip install -r requirements.txt
     displayName: 'Install requirements'

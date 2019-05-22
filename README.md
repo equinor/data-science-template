@@ -1,8 +1,7 @@
-[![](https://travis-ci.org/Statoil/data-science-template.svg?branch=master)](https://travis-ci.org/Statoil/data-science-template?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/Statoil/data-science-template/badge.svg?branch=master)](https://coveralls.io/github/Statoil/data-science-template?branch=master)
+[![Build Status](https://dev.azure.com/mhew/data-science-template/_apis/build/status/equinor.data-science-template?branchName=master)](https://dev.azure.com/mhew/data-science-template/_build/latest?definitionId=5&branchName=master)
 
 # Data Science Template
-This is a starter template for data science projects in Equinor, however it may also be useful for others. It contains many of the essential artifacts that you will need and presents a number of best practices including a standard template to guide and gather information relating to the process and specific use case. 
+This is a starter template for data science projects in Equinor, although it may also be useful for others. It contains many of the essential artifacts that you will need and presents a number of best practices including code setup, samples, a standard document to guide and gather information relating to the data science process and more. 
 
 As it is impossible to create a single template that will meet every projects needs, this example should be considered
 a starting point and changed based upon the working and evolution of your project.
@@ -23,9 +22,9 @@ project:
 
     cookiecutter https://github.com/equinor/data-science-template.git
 
-*Getting problems? You can always download this repository using the download button and reference the local copy e.g. cookiecutter c:\Downloads\data-science-template, however ideally fix any git proxy or other issues that are causing problems.*
+*Getting problems? You can always download this repository using the download button above and reference the local copy e.g. cookiecutter c:\Downloads\data-science-template, however ideally fix any git proxy or other issues that are causing problems.*
 
-You are now ready to get started, however you should create a new github repository for your new project and add your 
+You are now ready to get started, however you should first create a new github repository for your new project and add your 
 project using the following commands (substitute myproject with the name of your project and REMOTE-REPOSITORY-URL 
 with the remote repository url).
 
@@ -84,6 +83,11 @@ pip install -r requirements.txt
 To run the template tests, install pytest using pip or conda and then from the repository root run
  
     pytest tests
+
+#### Linting
+To verify that your code adheres to python standards run linting as shown below:
+
+    flake8 --max-line-length=120 *.py hooks/ tests/
 
 ## Important Links
 * https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards - Data Science Technical Standards (Equinor Internal)
