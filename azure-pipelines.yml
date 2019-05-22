@@ -2,7 +2,7 @@ trigger:
 - master
 
 jobs:
-- job: Build and Test
+- job: Build_and_Test
   displayName: Build and Test
   condition: succeeded()
   pool:
