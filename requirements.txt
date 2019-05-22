@@ -1,0 +1,3 @@
+cookiecutter
+pytest
+pytest-cookies
