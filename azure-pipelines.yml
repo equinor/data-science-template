@@ -29,7 +29,7 @@ jobs:
     displayName: 'Run lint (flake8) tests'
 
   - script: |
-      pytest python-testing --doctest-modules --junitxml=junit/test-results.xml --cov --cov-report=xml --cov-report=html
+      pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov --cov-report=xml --cov-report=html
     displayName: pytest
 
   - task: PublishTestResults@2
