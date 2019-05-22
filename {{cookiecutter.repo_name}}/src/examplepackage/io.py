@@ -10,7 +10,8 @@ from statoilds import datalake
 
 
 class IO:
-    cleaned_file_remote = '/transform/plant/1776-TROC/production_optimisation_gor/test/ims_to_frame_testoutput_mh_full/part-00000-tid-7436756728927562228-cad70317-d050-4d9a-a650-c580d3d1c78f-0-c000.csv'
+    cleaned_file_remote = '/transform/plant/1776-TROC/production_optimisation_gor/test/ims_to_frame_testoutput_mh_' \
+                          'full/part-00000-tid-7436756728927562228-cad70317-d050-4d9a-a650-c580d3d1c78f-0-c000.csv'
     cleaned_file_local = 'temp/example_temp_file.csv'
     local_data_path = '.'
 
