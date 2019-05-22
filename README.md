@@ -13,7 +13,7 @@ Before working with the contents of this template or Data Science projects in ge
 
 ## Getting Started With This Template
 This template is provided as a [Cookiecutter template](http://cookiecutter.readthedocs.org/en/latest/installation.html) so you
-can quickly create an instance customised for your project.
+can quickly create an instance customised for your project. An assumption is that you have a working python installation.
 
 To get running, first install the latest Cookiecutter if you haven't installed it yet (this requires
 Cookiecutter 1.4.0 or higher):
@@ -24,6 +24,8 @@ Then generate a new project for your own use based upon the template, answering 
 project:
 
     cookiecutter https://github.com/equinor/data-science-template.git
+
+*Getting problems? You can always download this repository using the download button and reference the local copy e.g. cookiecutter c:\Downloads\data-science-template, however ideally fix any git proxy or other issues that are causing problems.*
 
 You are now ready to get started, however you should create a new github repository for your new project and add your 
 project using the following commands (substitute myproject with the name of your project and REMOTE-REPOSITORY-URL 
