@@ -30,14 +30,16 @@ if __name__ == "__main__":
     # Print out some information on setup and next steps
     print("""
 
-Data Science Project '{{ cookiecutter.repo_name }}' created using the following parameters:
+Data Science Project '{{ cookiecutter.repo_name }}' created using the following
+parameters:
 
 {% for key, value in cookiecutter.items()|sort %}
     {{ "{0:26}".format(key + ":") }} {{ "{0!r}".format(value).strip("u") }}
 {%- endfor %}
 
-You are now ready to get started, however you should create a new github repository for your new project and add 
-your project using the following commands (substitute REMOTE-REPOSITORY-URL with the remote repository url).
+You are now ready to get started, however you should create a new github
+repository for your new project and add your project using the following
+commands (substitute REMOTE-REPOSITORY-URL with the remote repository url).
 
     cd {{ cookiecutter.repo_name }}
     git init

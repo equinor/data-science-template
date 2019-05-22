@@ -25,13 +25,10 @@ jobs:
     displayName: 'Install requirements'
 
   - script: |
-      python -m pip install flake8
-      flake8 --max-line-length=120 .
+      flake8 --max-line-length=120 *.py hooks/ tests/
     displayName: 'Run lint (flake8) tests'
 
   - script: |
-      pip install pytest
-      pip install pytest-cov
       pytest python-testing --doctest-modules --junitxml=junit/test-results.xml --cov --cov-report=xml --cov-report=html
     displayName: pytest
 
