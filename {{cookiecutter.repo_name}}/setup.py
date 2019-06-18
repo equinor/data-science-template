@@ -15,27 +15,46 @@ def read(file_name):
     'GPL3': 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
 } %}
 
+
+install_requires = [
+    'numpy',
+    'pytest',
+    'pandas'
+]
+
+setup_requirements = [
+    'pytest-runner',
+    'better-setuptools-git-version'
+]
+
+test_requirements = [
+    'pytest',
+    'nbformat'
+]
+
 setup(
-    name="{{cookiecutter.project_name}}",
-    # version="0.0.1",
-    version_config={
-      "version_format": "{tag}.dev{sha}",
-      "starting_version": "0.0.1"
-    },
-    setup_requires=['pytest-runner', 'better-setuptools-git-version'],
-    tests_require=['pytest', 'nbformat'],
     author='{{cookiecutter.author}}',
     author_email="Name@equinor.com",
-    description="{{cookiecutter.project_description}}",
-    long_description=open('README.md').read(),
-    packages=['examplepackage'],
-    package_dir={'': 'src'},
-    test_suite='tests',
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
 {%- if cookiecutter.open_source_license in license_classifiers %}
         '{{ license_classifiers[cookiecutter.open_source_license] }}',
 {%- endif %}
-    ], install_requires=['numpy', 'pytest', 'pandas']
+    ],
+
+    name="{{cookiecutter.project_name}}",
+    # version="0.0.1",
+    version_config={
+      "version_format": "{tag}.dev{sha}",
+      "starting_version": "0.0.1"
+    },
+    description="{{cookiecutter.project_description}}",
+    long_description=open('README.md').read(),
+    packages=['{{cookiecutter.package_name}}'],
+    package_dir={'': 'src'},
+    setup_requires=setup_requirements,
+    test_suite='tests',
+    tests_require=test_requirements,
+    install_requires=install_requires
 )
