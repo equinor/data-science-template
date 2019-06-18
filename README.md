@@ -75,6 +75,9 @@ Depending upon the selected options when creating the project, the generated str
 │   ├── features             <- Notebooks for generating and analysing features (1 per feature)
 │   ├── modelling            <- Notebooks for modelling
 │   └── preprocessing        <- Notebooks for Preprocessing 
+
+├── scripts                  <- Standalone scripts
+│   └── example.py           <- Example sctipt
 │
 ├── src                      <- Code for use in this project.
 │   └── examplepackage       <- Example python package - place shared code in such a package
@@ -97,12 +100,19 @@ Depending upon the selected options when creating the project, the generated str
 Contributions to this template are greatly appreciated and encouraged.
 
 To contribute an update simply:
-* Create a new branch / fork for your updates.
+* Submit an issue describing your proposed change to the repo in question.
+* The repo owner will respond to your issue promptly.
+* Fork the desired repo, develop and test your code changes.
 * Check that your code follows the PEP8 guidelines (line lengths up to 120 are ok) and other general conventions within this document.
+* Ensure that your code adheres to the existing style. Refer to the
+   [Google Cloud Platform Samples Style Guide](
+   https://github.com/GoogleCloudPlatform/Template/wiki/style.html) for the
+   recommended coding standards for this organization.
 * Ensure that as far as possible there are unit tests covering the functionality of any new code.
 * Check that all existing unit tests still pass.
-* Edit this document if needed to describe new files or other important information.
-* Create a pull request.
+* Edit this document and the template README.md if needed to describe new files or other important information.
+* Submit a pull request.
+
 
 ### Template development environment
 To develop this template further you might want to setup a virtual environment
