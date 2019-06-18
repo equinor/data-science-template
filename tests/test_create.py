@@ -65,6 +65,9 @@ def test_bake_with_defaults(cookies):
         assert 'README.md' in found_top_level_files
         assert 'setup.py' in found_top_level_files
 
+        assert os.path.isdir(os.path.join(result.project, 'src', 'project_name'))
+        assert os.path.isdir(os.path.join(result.project, 'tests', 'project_name'))
+
 
 def test_bake_and_run_tests(cookies):
     with bake_in_temp_dir(cookies) as result:
@@ -95,3 +98,15 @@ def test_bake_not_open_source(cookies):
         found_top_level_files = [f.basename for f in result.project.listdir()]
         assert 'setup.py' in found_top_level_files
         assert 'LICENSE' not in found_top_level_files
+
+
+def test_bake_package_name(cookies):
+    with bake_in_temp_dir(cookies, extra_context={'package_name': 'my_package'}) as result:
+        with inside_dir(result.project):
+            assert os.path.isdir(os.path.join('src', 'my_package'))
+            assert os.path.isdir(os.path.join('tests', 'my_package'))
+
+            'from my_package import examplemodule' in \
+                open(os.path.join('tests', 'my_package', 'examplemodule', 'test_add_value_to_numpy.py')).read()
+            'from my_package import examplemodule' in \
+                open(os.path.join('tests', 'my_package', 'examplemodule', 'test_hello_world.py')).read()

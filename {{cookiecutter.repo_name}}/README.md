@@ -81,7 +81,7 @@ Once the Python Conda environment has been set up, you can
 │   └── preprocessing        <- Notebooks for Preprocessing 
 │
 ├── src                      <- Code for use in this project.
-│   └── examplepackage       <- Example python package - place shared code in such a package
+│   └── {{cookiecutter.package_name}}       <- Example python package - place shared code in such a package
 │       ├── __init__.py      <- Python package initialisation
 │       ├── examplemodule.py <- Example module with functions and naming / commenting best practices
 │       ├── features.py      <- Feature engineering functionality
@@ -90,7 +90,7 @@ Once the Python Conda environment has been set up, you can
 │
 └── tests                    <- Test cases (named after module)
     ├── test_notebook.py     <- Example testing that Jupyter notebooks run without errors
-    ├── examplepackage       <- examplepackage tests
+    ├── {{cookiecutter.package_name}}       <- {{cookiecutter.package_name}} tests
         ├── examplemodule    <- examplemodule tests (1 file per method tested)
         ├── features         <- features tests
         ├── io               <- io tests
@@ -119,12 +119,12 @@ To contribute an update simply:
 * Create a pull request.
 
 ## Important Links
-* https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards - Data Science Technical Standards (Equinor Internal)
+* https://wiki.equinor.com/wiki/index.php/Statoil_Data_Science_Technical_Standards - Data Science Technical Standards (Equinor Internal)
 * https://dataplatformwiki.azurewebsites.net/doku.php - Data Platform wiki (Equinor internal)
-* https://github.com/Statoil/data-science-shared - Shared Data Science Code Repository (Equinor internal)
+* https://github.com/equinor/data-science-shared - Shared Data Science Code Repository (Equinor internal)
 
 ## References
-* https://github.com/Statoil/data-science-template/ - The master template for this project
+* https://github.com/equinor/data-science-template/ - The master template for this project
 * http://docs.python-guide.org/en/latest/writing/structure/
 * https://github.com/Azure/Microsoft-TDSP
 * https://drivendata.github.io/cookiecutter-data-science/

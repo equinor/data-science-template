@@ -8,7 +8,7 @@ import pytest
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'src')))
 
 # from pandas.util.testing import assert_frame_equal
-from examplepackage import examplemodule
+from {{cookiecutter.package_name}} import examplemodule
 
 
 def test_add_value_to_numpy():
