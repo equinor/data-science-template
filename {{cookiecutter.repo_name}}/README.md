@@ -1,3 +1,7 @@
+{% if cookiecutter.devops_organisation != '' %}
+[![Build Status](https://dev.azure.com/{{cookiecutter.devops_organisation}}/{{cookiecutter.repo_name}}/_apis/build/status/equinor.{{cookiecutter.repo_name}}?branchName=master)](https://dev.azure.com/{{cookiecutter.devops_organisation}}/{{cookiecutter.repo_name}}/_build/latest?definitionId=1&branchName=master)
+{% endif %}
+
 # {{cookiecutter.project_name}}
 
 {{cookiecutter.project_description}}

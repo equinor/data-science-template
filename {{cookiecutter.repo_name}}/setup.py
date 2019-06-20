@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 # Utility function to read the README file.
@@ -51,7 +51,7 @@ setup(
     },
     description="{{cookiecutter.project_description}}",
     long_description=open('README.md').read(),
-    packages=['{{cookiecutter.package_name}}'],
+    packages=find_packages('src'),
     package_dir={'': 'src'},
     setup_requires=setup_requirements,
     test_suite='tests',

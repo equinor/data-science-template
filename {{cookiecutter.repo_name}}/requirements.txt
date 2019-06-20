@@ -1,0 +1,6 @@
+flake8
+nbformat
+numpy
+pytest
+pytest-cookies
+pytest-cov

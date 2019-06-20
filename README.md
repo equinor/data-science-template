@@ -17,10 +17,25 @@ Cookiecutter 1.4.0 or higher):
 
     pip install -U cookiecutter
 
+### Create project
 Then generate a new project for your own use based upon the template, answering the questions to customise the generated 
 project:
 
     cookiecutter https://github.com/equinor/data-science-template.git
+    
+The values you are prompted for are:
+
+| Value                   | Description |
+| :---                    | --- |
+| project_name            | A name for your project. Used mostly within documentation | 
+| project_description     | A description to include in the README.md | 
+| repo_name               | The name of the github repository where the project will be held | 
+| package_name            | A name for the generated python package. | 
+| author                  | The main author of the solution. Included in the setup.py file | 
+| open_source_license     | What type of open source license the project will be released under | 
+| devops_organisation     | An Azure DevOps organisation. Leave blank if you aren't using Azure DevOps | 
+
+If you are uncertain about what to enter for any value then just accept the defaults. You can always change the generated project later.
 
 *Getting problems? You can always download this repository using the download button above and reference the local copy e.g. cookiecutter c:\Downloads\data-science-template, however ideally fix any git proxy or other issues that are causing problems.*
 
@@ -36,10 +51,22 @@ with the remote repository url).
     git remote -v
     git push origin master
 
-Finally you may want to:
+### Continuous Integration
+Continuous Integration (CI) increase quality by building, running tests and performing other validation whenever 
+code is committed. The template contains a build pipeline for Azure DevOps, however requires a couple of manual
+steps to setup:
 
-* Configure Azure DevOps for your new repository for CI / CD.
-* Update the readme file with additional project specific details including setup, configuration and usage. 
+* Log in to http://dev.azure.com and browse to, or create an organisation & project. The project name should be the same as your github repository name.
+* Under *Pipelines -> Builds select* *New Pipeline*
+* Select github and then your repository. Login / grant any permissions as prompted
+* In the review pane click *run*
+
+You are now setup for CI and automated test / building. You should verify the badge link in this README corresponds 
+with your DevOps project, and as a further step might setup any release pipelines for automated deployment. 
+
+### Finally
+
+* Update the project readme file with additional project specific details including setup, configuration and usage. 
 * The docs\process_documentation.md file should be completed phase by phase, and each phase result shall be submitted for review and approval before the project moves on to the next phase. This is to assist with the gathering of essential information required to deliver a correct and robust solution. The git respoitory shall be added to the script that populates the [knowledge repository](https://git.statoil.no/DataScience/projects) to ease future knowledge sharing.
 
 ## Generated Project Contents
