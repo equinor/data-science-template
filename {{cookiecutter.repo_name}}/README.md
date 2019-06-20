@@ -80,6 +80,9 @@ Once the Python Conda environment has been set up, you can
 │   ├── modelling            <- Notebooks for modelling
 │   └── preprocessing        <- Notebooks for Preprocessing 
 │
+├── scripts                  <- Standalone scripts
+│   └── example.py           <- Example sctipt
+│
 ├── src                      <- Code for use in this project.
 │   └── {{cookiecutter.package_name}}       <- Example python package - place shared code in such a package
 │       ├── __init__.py      <- Python package initialisation

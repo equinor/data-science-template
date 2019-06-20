@@ -2,7 +2,7 @@
     "project_name": "project_name",
     "project_description": "A short description of the project.",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '') }}",
     "author": "Equinor ASA",
     "open_source_license": ["Not open source", "MIT", "LGPL3", "GPL3"]
 }
