@@ -4,5 +4,6 @@
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '') }}",
     "author": "Equinor ASA",
-    "open_source_license": ["Not open source", "MIT", "LGPL3", "GPL3"]
+    "open_source_license": ["Not open source", "MIT", "LGPL3", "GPL3"],
+    "devops_organisation": ""
 }

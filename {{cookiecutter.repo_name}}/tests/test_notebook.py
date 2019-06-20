@@ -3,8 +3,6 @@ import subprocess
 import tempfile
 import nbformat
 
-import numpy as np
-
 
 def run_notebook(filename):
     """
@@ -28,7 +26,7 @@ def run_notebook(filename):
         nb = nbformat.read(fout, nbformat.current_nbformat)
 
     errors = [output for cell in nb.cells if "outputs" in cell
-              for output in cell["outputs"] \
+              for output in cell["outputs"]
               if output.output_type == "error"]
 
     return nb, errors
@@ -37,6 +35,6 @@ def run_notebook(filename):
 # Commented out for now pending an update to automatically set the conda environment.
 # This will work, but only if all libraries are in your default python environment. As I am using miniconda and the
 # example notebook uses numpy from within a separate environment this doesn't work for me.
-#def test_notebook():
+# def test_notebook():
 #    nb, errors = run_notebook('notebooks\example.ipynb')
 #    assert errors == []
