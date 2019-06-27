@@ -1,6 +1,5 @@
-# Equinor Data Science Process Standard
+# Data Science Process
 
-* * *
 ## Introduction
 This DS process standard takes the form of a template. Each DS project shall complete this template to make sure that DS project in Statoil can deliver value to business to the maximal extent.
  

@@ -88,8 +88,14 @@ Depending upon the selected options when creating the project, the generated str
 │   ├── raw                  <- The original, immutable data dump.
 │   └── temp                 <- Temporary files.
 │
-├── docs                     <- Any specific documentation (try ideally to keep to README.md)
-│   └── process_documentation.md  <- Standard template for documenting process and decisions.
+├── docs                     <- Documentation
+│   ├── data_science_code_of_conduct.md  <- Code of conduct.
+│   ├── process_documentation.md         <- Standard template for documenting process and decisions.
+│   └── writeup              <- Sphinx project for project writeup including auto generated API.
+│      ├── conf.py           <- Sphinx configurtation file.
+│      ├── index.rst         <- Start page.
+│      ├── make.bat          <- For generating documentation (Windows)
+│      └── Makefikle         <- For generating documentation (make)
 │
 ├── examples                 <- Add folders as needed e.g. examples, eda, use case
 │
