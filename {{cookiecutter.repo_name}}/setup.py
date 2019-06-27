@@ -18,8 +18,8 @@ def read(file_name):
 
 install_requires = [
     'numpy',
-    'pytest',
-    'pandas'
+    'pandas',
+    'pytest'
 ]
 
 setup_requirements = [

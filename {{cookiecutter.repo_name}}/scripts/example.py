@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 
 """An example python script template.
+
+Argv:
+    infile: Input file
+    outfile: Output file
+
 """
 
 import sys

@@ -1,13 +1,14 @@
-# Equinor Data Science Code of Conduct
-
-***
+# Code of Conduct
 
 ## Authorship and validity
-This document was developed by the Data Scientists within the Digital Centre of Excellence of Equinor (DCoE) and is endorsed by the unit.
-This code of conduct is derived from the “Data Science Code of Professional Conduct” written by the Data Science Association. The full version is available at http://www.datascienceassn.org/code-of-conduct.html. For definitions of the terminology in this code of conduct please consult the full version.
-This code of conduct attempts to distill the fuller code to a more manageable level, a code which is easier to communicate whilst (hopefully) still retaining the spirit of the Data Association’s code of conduct. We have done this through highlighting what we believe to be the most salient points. Points conspicuous in their absence should not be assumed to be invalid. The full code of conduct is embraced in its entirety by the Data Scientists here at Equinor’s DCoE.
-The aim of this code of conduct is to help ensure the quality of Data Science carried out at Equinor is at least in accordance with the guidelines set out below. This includes the work of Data Scientists within the DCoE, other internal resources and external partners and vendors. Indeed, all data science which is delivered to Equinor.
+This code of conduct is derived from the “Data Science Code of Professional Conduct” written by the Data Science Association. The full version is available at [http://www.datascienceassn.org/code-of-conduct.html](http://www.datascienceassn.org/code-of-conduct.html). For definitions of the terminology in this code of conduct please consult the full version.
+
+This code of conduct attempts to distill the fuller code to a more manageable level, a code which is easier to communicate whilst (hopefully) still retaining the spirit of the Data Association’s code of conduct. We have done this through highlighting what we believe to be the most important points for data science in Equinor. Points conspicuous in their absence should not be assumed to be invalid. The full code of conduct is embraced in its entirety.
+
+The aim of this code of conduct is to help ensure the quality of Data Science carried out at Equinor is at least in accordance with the guidelines set out below. This includes the work of internal Data Scientists, other internal resources and external partners and vendors. Indeed, all data science which is delivered to Equinor.
+
 Key tenets are competence, honesty, scientific integrity and repeatability.
+
 The rules detailed here are intended to augment relevant laws and regulations which are valid in the local where the data science work is being delivered (e.g. the European Union’s General Data Protection Regulation). In the event of any perceived conflict between this code of conduct and local rules and regulations it is the local rules and regulations which take precedence. 
 
 ## Success criteria and validation

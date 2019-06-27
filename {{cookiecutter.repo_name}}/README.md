@@ -69,8 +69,14 @@ Once the Python Conda environment has been set up, you can
 │   ├── raw                  <- The original, immutable data dump.
 │   └── temp                 <- Temporary files.
 │
-├── docs                     <- Any specific documentation (try ideally to keep to README.md)
-│   └── process_documentation.md  <- Standard template for documenting process and decisions.
+├── docs                     <- Documentation
+│   ├── data_science_code_of_conduct.md  <- Code of conduct.
+│   ├── process_documentation.md         <- Standard template for documenting process and decisions.
+│   └── writeup              <- Sphinx project for project writeup including auto generated API.
+│      ├── conf.py           <- Sphinx configurtation file.
+│      ├── index.rst         <- Start page.
+│      ├── make.bat          <- For generating documentation (Windows)
+│      └── Makefikle         <- For generating documentation (make)
 │
 ├── examples                 <- Add folders as needed e.g. examples, eda, use case
 │
@@ -97,7 +103,7 @@ Once the Python Conda environment has been set up, you can
 │
 └── tests                    <- Test cases (named after module)
     ├── test_notebook.py     <- Example testing that Jupyter notebooks run without errors
-    ├── {{cookiecutter.package_name}}       <- {{cookiecutter.package_name}} tests
+    └── {{cookiecutter.package_name}}       <- {{cookiecutter.package_name}} tests
         ├── examplemodule    <- examplemodule tests (1 file per method tested)
         ├── features         <- features tests
         ├── io               <- io tests
@@ -112,7 +118,20 @@ any other non trivial code to ensure the correct functioning.
 To run tests, install pytest using pip or conda (should have been setup already if you used the conda_env.yml file) and 
 then from the repository root run
  
-```pytest```
+```
+pytest
+```
+
+## Automated Document Generation
+A [sphinx](https://www.sphinx-doc.org/) project is provided under docs/writeup that will generate writeup that
+also includes automatically generated API information for any packages. THe output can be created in multiple
+formats including html and pdf. If you are using CI then this can be run automatically. To run 
+locally execute the following commands:
+ 
+```
+cd docs/writeup
+make html
+```
 
 ## Development Process
 Contributions to this template are greatly appreciated and encouraged.
