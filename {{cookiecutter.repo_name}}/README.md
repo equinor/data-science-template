@@ -133,6 +133,8 @@ cd docs/writeup
 make html
 ```
 
+On Windows this will run the make.bat, a Makefile is also included for those using the 'make' command.
+
 ## Development Process
 Contributions to this template are greatly appreciated and encouraged.
 
