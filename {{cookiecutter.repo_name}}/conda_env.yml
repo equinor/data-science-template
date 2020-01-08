@@ -1,8 +1,13 @@
-name: my_environment
+name: {{cookiecutter.conda_name}}
 dependencies:
-  - pandas=0.20.3
-  - pytest=3.2.1
-  - pytest-cov=2.5.1
-  - numpy=1.13.1
-  - nbconvert=5.3.1
+  - pandas=0.23.4
+  - pytest=5.3.1
+  - pytest-cov=2.8.1
+  - numpy=1.17.4
+  - nbconvert=5.6.1
   - nbformat=4.4.0
+  - pip:
+    - azureml-sdk
+    - joblib==0.14.1
+    - matplotlib==3.1.2
+    - scikit-learn==0.22.1

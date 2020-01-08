@@ -38,18 +38,18 @@ Once the Python Conda environment has been set up, you can
 
 * Activate the environment using the following command in a terminal window:
 
-  * Windows: `activate my_environment`
-  * Linux, OS X: `source activate my_environment`
+  * Windows: `activate {{cookiecutter.conda_name}}`
+  * Linux, OS X: `source activate {{cookiecutter.conda_name}}`
   * The __environment is activated per terminal session__, so you must activate it every time you open terminal.
 
 * Deactivate the environment using the following command in a terminal window:
 
-  * Windows: `deactivate my_environment`
-  * Linux, OS X: `source deactivate my_environment`
+  * Windows: `deactivate {{cookiecutter.conda_name}}`
+  * Linux, OS X: `source deactivate {{cookiecutter.conda_name}}`
                
 * Delete the environment using the command (can't be undone):
 
-  * `conda remove --name my_environment --all`
+  * `conda remove --name {{cookiecutter.conda_name}} --all`
 
 ## Initial File Structure
 
@@ -67,7 +67,8 @@ Once the Python Conda environment has been set up, you can
 │   ├── interim_[desc]       <- Interim files - give these folders whatever name makes sense.
 │   ├── processed            <- The final, canonical data sets for modeling.
 │   ├── raw                  <- The original, immutable data dump.
-│   └── temp                 <- Temporary files.
+│   ├── temp                 <- Temporary files.
+│   └── training             <- Files relating to the training process
 │
 ├── docs                     <- Documentation
 │   ├── data_science_code_of_conduct.md  <- Code of conduct.
@@ -91,7 +92,14 @@ Once the Python Conda environment has been set up, you can
 │   └── preprocessing        <- Notebooks for Preprocessing 
 │
 ├── scripts                  <- Standalone scripts
-│   └── example.py           <- Example sctipt
+│   ├── deploy               <- MLOps scripts for deployment (WIP)
+│   │   └── score.py         <- Scoring script
+│   ├── train                <- MLOps scripts for training
+│   │   ├── submit-train.py  <- Script for submitting a training run to Azure ML Service
+│   │   ├── submit-train-local.py <- Script for local training using Azure ML
+│   │   └── train.py         <- Example training script using the iris dataset
+│   ├── example.py           <- Example sctipt
+│   └── MLOps.ipynb          <- End to end MLOps example (To be refactored into the above)
 │
 ├── src                      <- Code for use in this project.
 │   └── {{cookiecutter.package_name}}       <- Example python package - place shared code in such a package
@@ -109,6 +117,14 @@ Once the Python Conda environment has been set up, you can
         ├── io               <- io tests
         └── pipeline         <- pipeline tests
 ```
+
+## MLOps
+Starter scripts for MLOps with Azure ML Service are included as a part of this template in the scripts folder and may be
+customised for your own purposes. Please browse the contents of the scripts folder for more details.
+
+For model training, the provided setup allows for running locally without any dependency on Azure ML by running train.py
+in the scripts/train folder directly. Alternatively you can submit local or remote runs using the submit scripts in the 
+same folder.
 
 ## Testing
 Reproducability and the correct functioning of code are essential to avoid wasted time. If a code block is copied more 

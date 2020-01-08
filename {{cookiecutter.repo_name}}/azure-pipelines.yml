@@ -25,7 +25,7 @@ jobs:
     displayName: 'Install requirements'
 
   - script: |
-      flake8 --max-line-length=120 *.py hooks/ tests/
+      flake8 --max-line-length=120 *.py tests/ scripts/
     displayName: 'Run lint (flake8) tests'
 
   - script: |

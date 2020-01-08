@@ -1,0 +1,10 @@
+# The .gitignore file specifies things that git should ignore. 
+#
+# Whilst data should typically be consumed from the datalake or some other source, 
+# this folder could contain local raw data files that should be copied in.
+#
+# Git should typically ignore everything in this directory  (except for this file)
+
+*
+!.gitignore
+#!SomeOtherFileToInclude

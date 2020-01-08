@@ -5,6 +5,9 @@
 ## Add custom entries below here.
 ##
 dst-env/
+.cache/v/cache/lastfailed
+tests/.cache/v/cache/lastfailed
+.vscode/settings.json
 
 ##
 ## R Section - See https://github.com/github/gitignore/blob/master/R.gitignore
@@ -458,5 +461,4 @@ __pycache__/
 
 # OpenCover UI analysis results
 OpenCover/
-.cache/v/cache/lastfailed
-tests/.cache/v/cache/lastfailed
+junit/

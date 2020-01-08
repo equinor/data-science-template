@@ -2,7 +2,10 @@
     "project_name": "project_name",
     "project_description": "A short description of the project.",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "conda_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '') }}",
+    "mlops_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "mlops_compute_name": "cpu-compute",
     "author": "Equinor ASA",
     "open_source_license": ["Not open source", "MIT", "LGPL3", "GPL3"],
     "devops_organisation": ""

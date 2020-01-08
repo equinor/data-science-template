@@ -4,7 +4,7 @@
 ##
 ## Add custom entries below here.
 ##
-
+scripts/config.json
 
 ##
 ## R Section - See https://github.com/github/gitignore/blob/master/R.gitignore

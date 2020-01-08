@@ -1,7 +1,7 @@
 [![Build Status](https://dev.azure.com/mhew/data-science-template/_apis/build/status/equinor.data-science-template?branchName=master)](https://dev.azure.com/mhew/data-science-template/_build/latest?definitionId=5&branchName=master)
 
 # Data Science Template
-This is a starter template for data science projects in Equinor, although it may also be useful for others. It contains many of the essential artifacts that you will need and presents a number of best practices including code setup, samples, a standard document to guide and gather information relating to the data science process and more. 
+This is a starter template for data science projects in Equinor, although it may also be useful for others. It contains many of the essential artifacts that you will need and presents a number of best practices including code setup, samples, MLOps using Azure, a standard document to guide and gather information relating to the data science process and more. 
 
 As it is impossible to create a single template that will meet every projects needs, this example should be considered
 a starting point and changed based upon the working and evolution of your project.
@@ -29,8 +29,11 @@ The values you are prompted for are:
 | :---                    | --- |
 | project_name            | A name for your project. Used mostly within documentation | 
 | project_description     | A description to include in the README.md | 
-| repo_name               | The name of the github repository where the project will be held | 
+| repo_name               | The name of the github repository where the project will be held |
+| conda_name              | The name of the conda environment to use |
 | package_name            | A name for the generated python package. | 
+| mlops_name              | Default name for Azure ML. | 
+| mlops_compute_name      | Default Azure ML compute cluster name to use. | 
 | author                  | The main author of the solution. Included in the setup.py file | 
 | open_source_license     | What type of open source license the project will be released under | 
 | devops_organisation     | An Azure DevOps organisation. Leave blank if you aren't using Azure DevOps | 
@@ -62,7 +65,9 @@ steps to setup:
 * In the review pane click *run*
 
 You are now setup for CI and automated test / building. You should verify the badge link in this README corresponds 
-with your DevOps project, and as a further step might setup any release pipelines for automated deployment. 
+with your DevOps project, and as a further step might setup any release pipelines for automated deployment.
+
+At this stage the build pipeline doesn't include MLOps steps, although these can be added based uon your needs.
 
 ### Finally
 
@@ -86,7 +91,8 @@ Depending upon the selected options when creating the project, the generated str
 │   ├── interim_[desc]       <- Interim files - give these folders whatever name makes sense.
 │   ├── processed            <- The final, canonical data sets for modeling.
 │   ├── raw                  <- The original, immutable data dump.
-│   └── temp                 <- Temporary files.
+│   ├── temp                 <- Temporary files.
+│   └── training             <- Files relating to the training process
 │
 ├── docs                     <- Documentation
 │   ├── data_science_code_of_conduct.md  <- Code of conduct.
@@ -108,9 +114,16 @@ Depending upon the selected options when creating the project, the generated str
 │   ├── features             <- Notebooks for generating and analysing features (1 per feature)
 │   ├── modelling            <- Notebooks for modelling
 │   └── preprocessing        <- Notebooks for Preprocessing 
-
+│
 ├── scripts                  <- Standalone scripts
-│   └── example.py           <- Example sctipt
+│   ├── deploy               <- MLOps scripts for deployment (WIP)
+│   │   └── score.py         <- Scoring script
+│   ├── train                <- MLOps scripts for training
+│   │   ├── submit-train.py  <- Script for submitting a training run to Azure ML Service
+│   │   ├── submit-train-local.py <- Script for local training using Azure ML
+│   │   └── train.py         <- Example training script using the iris dataset
+│   ├── example.py           <- Example sctipt
+│   └── MLOps.ipynb          <- End to end MLOps example (To be refactored into the above)
 │
 ├── src                      <- Code for use in this project.
 │   └── examplepackage       <- Example python package - place shared code in such a package
