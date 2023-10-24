@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository is no longer maintained and as it has diverged from changes to Azure ML is now archived.
+
 [![Build Status](https://dev.azure.com/mhew/data-science-template/_apis/build/status/data-science-template?branchName=master)](https://dev.azure.com/mhew/data-science-template/_build/latest?definitionId=15&branchName=master)
 
 # Data Science Template
